@@ -1,7 +1,10 @@
 package engine;
 
+import java.util.List;
+
 public interface SensorProvider {
-    CpuInfo getCpuInfo() throws InterruptedException;
+    CpuInfo getCpuInfo();
     RamInfo getRamInfo();
-    GpuInfo getGpuInfo() throws InterruptedException; // добавляем
+    GpuInfo getGpuInfo();
+    List<DiskInfo> getDisksInfo();
 }
